@@ -43,8 +43,12 @@ function CaregiverDashboard() {
   const [conversationLoading, setConversationLoading] = useState(false);
   const [conversationError, setConversationError] = useState('');
 
-  const [activities] = useState([]);
   const [linkedPatients, setLinkedPatients] = useState([]);
+
+  const selectedPatient =
+    linkedPatients.find(
+      patient => patient.id === localStorage.getItem('selectedPatientId')
+    ) || linkedPatients[0] || null;
   const [linkCode, setLinkCode] = useState('');
   const [linking, setLinking] = useState(false);
   const [linkError, setLinkError] = useState('');
@@ -224,8 +228,7 @@ function CaregiverDashboard() {
     { id: 'profile', label: 'Patient profile', icon: Users },
     { id: 'memories', label: 'Memory profile', icon: BookHeart },
     { id: 'reminders', label: 'Reminders', icon: Clock },
-    { id: 'conversations', label: 'Conversations', icon: MessageCircle },
-    { id: 'activities', label: 'Activities', icon: Activity }
+    { id: 'conversations', label: 'Conversations', icon: MessageCircle }
   ];
 
   const openModal = (type, item = null) => {
@@ -375,12 +378,6 @@ function CaregiverDashboard() {
           <p>Personal memory records</p>
         </div>
 
-        <div className="care-stat-card">
-          <div className="stat-icon amber"><Activity /></div>
-          <span>Activities</span>
-          <h2>{activities.length}</h2>
-          <p>Recorded activities</p>
-        </div>
       </div>
 
       <div className="care-content-grid">
@@ -398,8 +395,8 @@ function CaregiverDashboard() {
               <Users size={32} />
             </div>
             <div>
-              <h3>Patient profile</h3>
-              <p>Personal details and preferences</p>
+              <h3>{selectedPatient?.name || 'Patient profile'}</h3>
+              <p>{selectedPatient?.email || 'Patient information unavailable'}</p>
             </div>
           </div>
 
@@ -439,16 +436,6 @@ function CaregiverDashboard() {
         </section>
       </div>
 
-      <section className="care-card care-activity-card">
-        <div className="care-card-heading">
-          <div>
-            <h2>Recent activities</h2>
-            <p>Activity tracking is not connected to the backend yet.</p>
-          </div>
-          <Activity size={22} />
-        </div>
-        <p>No activity records are available yet.</p>
-      </section>
     </>
   );
 
@@ -556,22 +543,70 @@ function CaregiverDashboard() {
         <div>
           <span className="care-eyebrow">PATIENT DETAILS</span>
           <h1>Patient profile</h1>
-          <p>Manage basic information and care preferences.</p>
+          <p>View the basic information of your linked patient.</p>
         </div>
       </div>
 
-      <section className="care-card profile-placeholder">
-        <Users size={40} />
-        <h2>Patient information</h2>
-        <p>
-          We will connect this section to the patient profile
-          stored in MongoDB.
-        </p>
-        <p className="profile-note">
-          For this prototype, patient registration and profile editing
-          will be implemented with the backend.
-        </p>
-      </section>
+      {!selectedPatient ? (
+        <section className="care-card profile-placeholder">
+          <Users size={40} />
+          <h2>No patient selected</h2>
+          <p>Connect a patient to view their profile information.</p>
+        </section>
+      ) : (
+        <section className="care-card">
+          <div className="care-card-heading">
+            <div>
+              <h2>Personal information</h2>
+              <p>Details retrieved from the registered patient account.</p>
+            </div>
+            <Users size={22} />
+          </div>
+
+          <div className="patient-profile-preview">
+            <div className="patient-profile-avatar">
+              <Users size={32} />
+            </div>
+            <div>
+              <h3>{selectedPatient.name || 'Patient'}</h3>
+              <p>Linked patient</p>
+            </div>
+          </div>
+
+          <div className="profile-details">
+            <div className="profile-detail-item">
+              <span>Full name</span>
+              <strong>{selectedPatient.name || 'Not available'}</strong>
+            </div>
+
+            <div className="profile-detail-item">
+              <span>Email address</span>
+              <strong>{selectedPatient.email || 'Not available'}</strong>
+            </div>
+
+            <div className="profile-detail-item">
+              <span>Patient ID</span>
+              <strong>{selectedPatient.id}</strong>
+            </div>
+
+            <div className="profile-detail-item">
+              <span>Linked on</span>
+              <strong>
+                {selectedPatient.linked_at
+                  ? new Date(selectedPatient.linked_at).toLocaleDateString(
+                      'en-IN',
+                      {
+                        day: 'numeric',
+                        month: 'long',
+                        year: 'numeric'
+                      }
+                    )
+                  : 'Not available'}
+              </strong>
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 
@@ -857,31 +892,14 @@ function CaregiverDashboard() {
     </>
   );
 
-  const renderActivities = () => (
-    <>
-      <div className="care-welcome">
-        <div>
-          <span className="care-eyebrow">DAILY ENGAGEMENT</span>
-          <h1>Activities</h1>
-          <p>View cognitive activities and participation records.</p>
-        </div>
-      </div>
 
-      <section className="care-card profile-placeholder">
-        <Activity size={40} />
-        <h2>Activity tracking is not available yet</h2>
-        <p>This section will show completed quizzes and activities once activity tracking is connected to the backend. No sample activity records are being displayed as real patient data.</p>
-      </section>
-    </>
-  );
 
   const sectionContent = {
     overview: renderOverview,
     profile: renderProfile,
     memories: renderMemories,
     reminders: renderReminders,
-    conversations: renderConversations,
-    activities: renderActivities
+    conversations: renderConversations
   };
 
   return (
