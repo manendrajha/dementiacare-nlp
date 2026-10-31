@@ -1,0 +1,201 @@
+text,intent
+Hello,greeting
+Good morning,greeting
+How are you today,greeting
+Good evening,greeting
+Hello my friend,greeting
+I wanted to talk to you,greeting
+Is anyone there,greeting
+Nice to see you,greeting
+How is your day going,greeting
+Hello again,greeting
+I am here to chat,greeting
+Good afternoon,greeting
+Tell me about my family,family
+Who is my daughter,family
+I want to talk about my son,family
+Tell me about my grandchildren,family
+I miss my family,family
+Who visits me often,family
+Tell me about my wife,family
+Do I have any grandchildren,family
+Who are my relatives,family
+Tell me about my children,family
+Who usually comes to see me,family
+I would like to remember my brother,family
+What is my favourite place,memory
+What do I like doing,memory
+What is my favourite music,memory
+Do I have any hobbies,memory
+Where do I enjoy going,memory
+Remind me of something I like,memory
+What is my favourite food,memory
+Do you remember my favourite place,memory
+What do I enjoy listening to,memory
+Tell me about my hobbies,memory
+What things make me happy,memory
+What is something I enjoy,memory
+Where did I like to travel,memory
+What do you remember about me,memory
+What are some things I enjoy,memory
+What are my reminders today,reminder
+Do I have anything scheduled,reminder
+Remind me about lunch,reminder
+Show me my daily routine,reminder
+When should I go for my walk,reminder
+What is scheduled for this afternoon,reminder
+Do I have any tasks today,reminder
+When is my lunch time,reminder
+What comes next in my schedule,reminder
+Do I have a reminder for dinner,reminder
+What time should I take a break,reminder
+Show me my daily routine,reminder
+What is my schedule for today,reminder
+What activities do I have planned,reminder
+What am I supposed to do today,reminder
+What is coming up next,reminder
+Do I have anything planned for later,reminder
+What are my scheduled tasks,reminder
+Tell me what I have to do next,reminder
+What tasks do I have to do,reminder
+What should I do at this time,reminder
+What do I have scheduled,reminder
+What do I have to do today,reminder
+I am feeling sad,emotional_support
+I am scared,emotional_support
+I feel confused,emotional_support
+I don't feel very good today,emotional_support
+I miss someone,emotional_support
+I am worried,emotional_support
+Can you keep me company,emotional_support
+I am having a difficult day,emotional_support
+I feel like crying,emotional_support
+I am afraid of being alone,emotional_support
+I just need someone to talk to,emotional_support
+I am not feeling happy today,emotional_support
+Can we play a game,activity
+I want to do something fun,activity
+Give me a simple quiz,activity
+Tell me a story,activity
+Can we do an activity,activity
+Let's play a word game,activity
+Let's do a puzzle,activity
+Can we play a memory game,activity
+Give me something interesting to do,activity
+Can we practice some words,activity
+I want to play something,activity
+Can you give me a fun challenge,activity
+Tell me a story,activity
+Can you entertain me,activity
+I want to play something interesting,activity
+Let's try a little game together,activity
+Can you give me a riddle,activity
+I want to solve a puzzle,activity
+What day is it today,orientation
+What is today's date,orientation
+What month are we in,orientation
+What time is it,orientation
+Which day is tomorrow,orientation
+Can you tell me the date,orientation
+What is the date today,orientation
+Can you tell me what day it is,orientation
+Is today Monday,orientation
+What month is this,orientation
+Are we in the morning,orientation
+Which year are we in,orientation
+Thank you,gratitude
+That was helpful,gratitude
+I appreciate your help,gratitude
+You are very kind,gratitude
+Thank you for listening,gratitude
+That helped me,gratitude
+I am grateful,gratitude
+Thanks for being here,gratitude
+You have been very helpful,gratitude
+Thank you for your time,gratitude
+I am happy you helped me,gratitude
+"I feel better now, thank you",gratitude
+Goodbye,goodbye
+See you later,goodbye
+I will talk to you later,goodbye
+Bye for now,goodbye
+I am going now,goodbye
+Talk to you soon,goodbye
+I have to leave now,goodbye
+I will see you tomorrow,goodbye
+"That is all for now, bye",goodbye
+"Take care, goodbye",goodbye
+I need to go,goodbye
+"Bye, have a nice day",goodbye
+Could you stay and chat with me,greeting
+I wanted to say hello,greeting
+Are you available to talk,greeting
+It's nice talking with you,greeting
+I will leave you for now,goodbye
+I am going to sleep now,goodbye
+I will speak with you another time,goodbye
+Until we meet again,goodbye
+I wish someone would sit with me,emotional_support
+I feel lonely without company,emotional_support
+I need someone beside me,emotional_support
+I am feeling left out,emotional_support
+I want something entertaining to do,activity
+Let's do something enjoyable,activity
+Can you suggest a fun game,activity
+I would like to try a word puzzle,activity
+What things do I enjoy doing,memory
+Can you recall my personal interests,memory
+What are my favourite activities,memory
+Tell me what you know about my preferences,memory
+What activities are planned for me today,reminder
+What is my next scheduled task,reminder
+What do I have planned for this evening,reminder
+Can you check my upcoming activities,reminder
+Who is coming to visit me?,family
+Can you tell me about my grandchildren?,family
+What is my son's name?,family
+Which family members live nearby?,family
+When did my daughter last visit?,family
+Can you tell me about my sister?,family
+Who in my family do I spend time with?,family
+Do you remember anything about my husband?,family
+What are my personal preferences?,memory
+Can you remind me what I enjoy?,memory
+What are my favourite things?,memory
+What do I usually enjoy listening to?,memory
+What hobbies have I told you about?,memory
+What places have I told you I like?,memory
+Can you recall something I shared about myself?,memory
+What do you know about my interests?,memory
+"Hello, are you free to chat?",greeting
+I would like some company.,greeting
+Can we talk for a while?,greeting
+"Good morning, how are you?",greeting
+I am happy to see you.,greeting
+I just wanted to check in.,greeting
+Can we have a conversation?,greeting
+It is nice to speak with you again.,greeting
+"I enjoyed our conversation, goodbye.",goodbye
+I will talk to you again soon.,goodbye
+I am finished chatting for today.,goodbye
+"I am going to bed now, goodbye.",goodbye
+"Thank you, I need to go now.",goodbye
+Let's talk again tomorrow.,goodbye
+I will be back later.,goodbye
+I am done for now.,goodbye
+Can we do a crossword?,activity
+I would like to play a guessing game.,activity
+Can you give me a simple brain teaser?,activity
+Let's practice remembering some words.,activity
+Can we sing a song together?,activity
+I want to draw something.,activity
+Can you suggest a creative activity?,activity
+Let's try a simple memory exercise.,activity
+What is the next thing on my schedule?,reminder
+When is my next appointment?,reminder
+What do I have planned tomorrow?,reminder
+Can you check my daily timetable?,reminder
+When am I supposed to have lunch?,reminder
+What time is my next activity scheduled?,reminder
+Do I have anything planned this morning?,reminder
+What is my next scheduled reminder?,reminder

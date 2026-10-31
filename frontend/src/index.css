@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #253b38;
+  background: #f7f8f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --primary: #397c70;
+  --primary-dark: #285e55;
+  --primary-light: #e6f1ed;
+  --background: #f7f8f4;
+  --surface: #ffffff;
+  --text-primary: #253b38;
+  --text-secondary: #7d8c86;
+  --border: #e9eeea;
+  --accent: #e9c99b;
+  --patient-font-size: 20px;
+--patient-heading-size: 36px;
+--patient-secondary-size: 17px;
+
+--caregiver-font-size: 17px;
+
+--control-min-height: 52px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Patient accessibility */
+
+.patient-interface {
+  font-size: var(--patient-font-size);
+  line-height: 1.7;
+}
+
+.patient-interface h1 {
+  font-size: var(--patient-heading-size);
+  line-height: 1.3;
+}
+
+.patient-interface h2 {
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.patient-interface p {
+  font-size: var(--patient-font-size);
+  line-height: 1.7;
+}
+
+.patient-interface button {
+  min-height: var(--control-min-height);
+  font-size: 18px;
+  padding: 12px 20px;
+}
+
+.patient-interface small {
+  font-size: var(--patient-secondary-size);
+}

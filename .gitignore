@@ -1,0 +1,105 @@
+
+# ==========================================
+# ENVIRONMENT VARIABLES AND SECRETS
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# PYTHON
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# ==========================================
+# NODE.JS / REACT / VITE
+# ==========================================
+node_modules/
+dist/
+build/
+.next/
+.vite/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==========================================
+# DATABASE AND LOCAL DATA
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+mongodb-data/
+data/db/
+
+# ==========================================
+# MACHINE LEARNING MODEL FILES
+# ==========================================
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.joblib
+
+# Model weights and generated artifacts
+models/weights/
+model/weights/
+
+# ==========================================
+# OLLAMA
+# ==========================================
+.ollama/
+ollama/models/
+
+# Keep ollama/Modelfile and ollama/README.md tracked.
+
+# ==========================================
+# LOGS AND TEMPORARY FILES
+# ==========================================
+*.log
+logs/
+*.tmp
+*.bak
+*.orig
+
+# ==========================================
+# OPERATING SYSTEM
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# IDE AND EDITOR
+# ==========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# ==========================================
+# ENVIRONMENT-SPECIFIC FILES
+# ==========================================
+*.local

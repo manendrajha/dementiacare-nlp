@@ -1,0 +1,44 @@
+text,intent
+Can you tell me about my husband,family
+When is my next activity,reminder
+What do you remember about my hobbies,memory
+Many thanks,gratitude
+I would like to hear a story,activity
+I am feeling anxious,emotional_support
+Have a good day,goodbye
+Tell me about things I like,memory
+What is my daughter's name,family
+Is it morning or evening,orientation
+Let's do a little exercise,activity
+Speak to you later,goodbye
+I don't want to be alone,emotional_support
+What do you know about my family members,family
+What do you know about my favourite things,memory
+Are you there,greeting
+What are my interests,memory
+Let's listen to a story,activity
+I feel lonely,emotional_support
+What time is my walk,reminder
+What do I need to remember,reminder
+I appreciate that,gratitude
+Who are the people in my family,family
+Hi there,greeting
+Can you hear me,greeting
+Can you tell me a bedtime story,activity
+Can you ask me a question,activity
+I feel a little upset,emotional_support
+Good night,goodbye
+Give me a fun activity to try,activity
+Thanks a lot,gratitude
+I am bored,activity
+What time of day is it,orientation
+I am going to rest now,goodbye
+Tell me something about myself,memory
+What should I do next,reminder
+What time is my afternoon walk,reminder
+"Hey, can we talk",greeting
+What day comes after today,orientation
+That was very nice of you,gratitude
+What is on my timetable,reminder
+Tell me my activities for today,reminder
+What year is it,orientation

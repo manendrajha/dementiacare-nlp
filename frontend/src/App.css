@@ -1,0 +1,1693 @@
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-nav {
+  height: 82px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  background: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.brand-icon {
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 10px;
+  border-radius: 13px;
+  display: flex;
+}
+
+.nav-caption {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.hero-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 85px 24px;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 65px;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.hero-content h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(42px, 6vw, 66px);
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 20px 0;
+}
+
+.hero-content h1 span {
+  color: var(--primary);
+}
+
+.hero-content p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 520px;
+  margin: auto;
+}
+
+.role-section h2 {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.role-card {
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  transition: 0.2s ease;
+  color: var(--text-primary);
+}
+
+.role-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 12px 30px rgba(38, 85, 74, 0.08);
+}
+
+.role-icon {
+  min-width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 15px;
+}
+
+.role-card h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+
+.role-card p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.role-arrow {
+  margin-left: auto;
+  min-width: 21px;
+  color: var(--primary);
+}
+
+.home-footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+@media (max-width: 650px) {
+  .role-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    padding: 55px 20px;
+  }
+
+  .home-nav {
+    padding: 0 20px;
+  }
+
+  .nav-caption {
+    display: none;
+  }
+
+  .role-card {
+    padding: 22px;
+  }
+}
+
+/* =================================
+   PATIENT DASHBOARD
+================================= */
+
+.patient-interface {
+  min-height: 100vh;
+  background: #f7f8f4;
+  color: #253b38;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.patient-header {
+  height: 76px;
+  background: #fff;
+  border-bottom: 1px solid #e9eeea;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.patient-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  color: #285e55;
+}
+
+.patient-brand-icon {
+  display: flex;
+  padding: 10px;
+  border-radius: 12px;
+  background: #e6f1ed;
+  color: #397c70;
+}
+
+.patient-exit-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: white;
+  border: 1px solid #e4eae5;
+  border-radius: 10px;
+  color: #526a62;
+  font-size: 16px;
+}
+
+.patient-exit-button:hover {
+  background: #f0f5f1;
+}
+
+.patient-main {
+  max-width: 1450px;
+  margin: auto;
+  padding: 38px 5%;
+}
+
+.patient-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.patient-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #397c70;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.patient-welcome h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 12px 0 4px;
+  color: #253b38;
+}
+
+.patient-welcome p {
+  color: #71817a;
+  font-size: 19px;
+  margin: 0;
+}
+
+.welcome-decoration {
+  width: 190px;
+  height: 115px;
+  background: #e6f1ed;
+  color: #397c70;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.welcome-decoration span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.patient-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(320px, 0.9fr);
+  gap: 25px;
+  align-items: start;
+}
+
+.patient-primary,
+.patient-secondary {
+  min-width: 0;
+}
+
+.patient-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.patient-tabs button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px solid #e4eae5;
+  background: white;
+  color: #60736b;
+  font-size: 17px;
+  font-weight: 600;
+  min-height: 52px;
+}
+
+.patient-tabs button.active {
+  background: #397c70;
+  border-color: #397c70;
+  color: white;
+}
+
+/* CHAT */
+
+.patient-chat-card {
+  background: white;
+  border: 1px solid #e8ede8;
+  border-radius: 20px;
+  padding: 26px;
+  box-shadow: 0 5px 20px rgba(38, 70, 57, 0.035);
+}
+
+.chat-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #edf0ec;
+}
+
+.chat-avatar {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #e6f1ed;
+  color: #397c70;
+  display: grid;
+  place-items: center;
+}
+
+.chat-heading h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.chat-heading p {
+  color: #819087;
+  font-size: 16px;
+  margin: 3px 0 0;
+}
+
+.online-indicator {
+  margin-left: auto;
+  color: #397c70;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.online-indicator span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #54a982;
+}
+
+.chat-messages {
+  min-height: 215px;
+  max-height: 350px;
+  overflow-y: auto;
+  padding: 25px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chat-message {
+  max-width: 85%;
+  padding: 15px 19px;
+  border-radius: 16px;
+  font-size: 19px;
+  line-height: 1.65;
+}
+
+.chat-message.assistant {
+  background: #edf4f0;
+  color: #34564c;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.chat-message.user {
+  background: #397c70;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.quick-prompts {
+  padding: 16px 0;
+  border-top: 1px solid #edf0ec;
+}
+
+.quick-prompts > p {
+  color: #78877f;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.prompt-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.prompt-buttons button {
+  padding: 10px 14px;
+  background: #f7f8f4;
+  color: #397c70;
+  border: 1px solid #dfeae3;
+  border-radius: 12px;
+  font-size: 15px;
+  min-height: 46px;
+}
+
+.prompt-buttons button:hover {
+  background: #e6f1ed;
+}
+
+.chat-input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.chat-input-area input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #dce5df;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 18px;
+  outline: none;
+  background: #fff;
+}
+
+.chat-input-area input:focus {
+  border-color: #397c70;
+  box-shadow: 0 0 0 3px rgba(57, 124, 112, 0.1);
+}
+
+.chat-input-area button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 20px;
+  background: #397c70;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.chat-input-area button:hover {
+  background: #285e55;
+}
+
+.chat-disclaimer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  color: #8a978e;
+  font-size: 14px;
+  margin: 17px 0 0;
+}
+
+/* RIGHT COLUMN */
+
+.patient-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.patient-panel {
+  background: white;
+  border: 1px solid #e8ede8;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 5px 20px rgba(38, 70, 57, 0.025);
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 21px;
+}
+
+.panel-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.reminder-icon {
+  background: #f7f0e4;
+  color: #a17a43;
+}
+
+.memory-icon {
+  background: #f3eaf0;
+  color: #9b6480;
+}
+
+.activity-icon {
+  background: #edf0f8;
+  color: #6477a3;
+}
+
+.panel-heading h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.panel-heading p {
+  color: #849088;
+  font-size: 15px;
+  margin: 2px 0 0;
+}
+
+/* REMINDERS */
+
+.reminder-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.reminder-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 15px 0;
+  border-top: 1px solid #edf0ec;
+}
+
+.reminder-check {
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  border: 2px solid #cbd9d0;
+  background: white;
+  color: #397c70;
+  border-radius: 50%;
+  margin-top: 5px;
+  display: grid;
+  place-items: center;
+}
+
+.reminder-check.checked {
+  border: none;
+  background: #e6f1ed;
+}
+
+.reminder-content span {
+  color: #397c70;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.reminder-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2px 0;
+}
+
+.reminder-content p {
+  font-size: 15px;
+  color: #859188;
+  margin: 0;
+}
+
+.completed-text {
+  text-decoration: line-through;
+  color: #8b9890;
+}
+
+/* MEMORIES */
+
+.memory-placeholder {
+  background: #faf6f8;
+  border-radius: 14px;
+  padding: 23px 17px;
+  text-align: center;
+  color: #986b83;
+}
+
+.memory-placeholder h3 {
+  color: #4b3d46;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px 0 5px;
+}
+
+.memory-placeholder p {
+  color: #8b7e85;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ACTIVITIES */
+
+.activity-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #f6f7fa;
+  border: 1px solid #ebedf3;
+  border-radius: 12px;
+  color: #34465f;
+  min-height: 76px;
+}
+
+.activity-item:hover {
+  background: #edf0f8;
+}
+
+.activity-item h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.activity-item p {
+  font-size: 14px;
+  color: #8590a0;
+  margin: 3px 0 0;
+}
+
+.activity-item > span {
+  font-size: 24px;
+  color: #6477a3;
+}
+
+/* FOOTER */
+
+.patient-footer {
+  text-align: center;
+  color: #87938b;
+  font-size: 15px;
+  padding: 35px 10px 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .patient-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-secondary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .patient-header {
+    padding: 0 18px;
+  }
+
+  .patient-brand {
+    font-size: 19px;
+  }
+
+  .patient-exit-button {
+    font-size: 14px;
+    padding: 9px;
+  }
+
+  .patient-main {
+    padding: 25px 16px;
+  }
+
+  .patient-welcome {
+    align-items: flex-start;
+  }
+
+  .patient-welcome h1 {
+    font-size: 30px;
+  }
+
+  .welcome-decoration {
+    display: none;
+  }
+
+  .patient-secondary {
+    display: flex;
+  }
+
+  .patient-chat-card {
+    padding: 17px;
+  }
+
+  .chat-heading h2 {
+    font-size: 19px;
+  }
+
+  .online-indicator {
+    display: none;
+  }
+
+  .chat-input-area button {
+    padding: 12px;
+  }
+
+  .chat-input-area button span {
+    display: none;
+  }
+
+  .patient-tabs {
+    gap: 7px;
+  }
+
+  .patient-tabs button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* =================================
+   CAREGIVER DASHBOARD
+================================= */
+
+.caregiver-interface {
+  min-height: 100vh;
+  display: flex;
+  background: #f7f8f5;
+  color: #253b38;
+  font-size: 17px;
+}
+
+.care-sidebar {
+  width: 255px;
+  min-width: 255px;
+  background: #fff;
+  border-right: 1px solid #e8ede8;
+  padding: 27px 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.care-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  color: #285e55;
+  padding: 0 9px;
+  margin-bottom: 50px;
+}
+
+.care-logo > div {
+  background: #e6f1ed;
+  color: #397c70;
+  padding: 9px;
+  display: flex;
+  border-radius: 12px;
+}
+
+.sidebar-label {
+  color: #9aa69e;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  padding-left: 12px;
+  margin-bottom: 15px;
+}
+
+.care-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.care-navigation button,
+.sidebar-bottom > button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 14px;
+  width: 100%;
+  min-height: 49px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #718078;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.care-navigation button:hover,
+.sidebar-bottom > button:hover {
+  background: #f2f6f2;
+  color: #397c70;
+}
+
+.care-navigation button.selected {
+  background: #e8f2ed;
+  color: #397c70;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.care-sidebar-footer {
+  border-top: 1px solid #edf0ec;
+  margin-top: 20px;
+  padding: 20px 10px 0;
+  color: #819087;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+}
+
+.care-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.care-topbar {
+  height: 75px;
+  background: white;
+  border-bottom: 1px solid #e8ede8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+
+.care-topbar > div:first-child {
+  font-size: 15px;
+  color: #7a8981;
+}
+
+.care-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.care-topbar-actions button {
+  border: none;
+  background: transparent;
+  color: #718078;
+  padding: 9px;
+}
+
+.care-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e6f1ed;
+  color: #397c70;
+  font-weight: 800;
+}
+
+.care-content {
+  max-width: 1500px;
+  margin: auto;
+  padding: 38px 4%;
+}
+
+.care-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.care-eyebrow {
+  font-size: 12px;
+  color: #397c70;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.care-welcome h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 8px 0 3px;
+}
+
+.care-welcome p {
+  color: #7d8c84;
+  font-size: 16px;
+  margin: 0;
+}
+
+.care-date {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #66786f;
+  font-size: 14px;
+  background: white;
+  border: 1px solid #e8ede8;
+  padding: 12px 15px;
+  border-radius: 10px;
+}
+
+/* STATS */
+
+.care-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px;
+  margin-bottom: 25px;
+}
+
+.care-stat-card {
+  background: white;
+  border: 1px solid #e8ede8;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 4px 15px rgba(38, 70, 57, 0.025);
+}
+
+.stat-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.stat-icon.green {
+  background: #e6f1ed;
+  color: #397c70;
+}
+
+.stat-icon.purple {
+  background: #f2eaf5;
+  color: #89648f;
+}
+
+.stat-icon.amber {
+  background: #f7f0e4;
+  color: #a17a43;
+}
+
+.care-stat-card > span {
+  font-size: 14px;
+  color: #7c8b83;
+}
+
+.care-stat-card h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 31px;
+  font-weight: 800;
+  margin: 5px 0 0;
+}
+
+.care-stat-card p {
+  font-size: 13px;
+  color: #9aa59e;
+  margin: 0;
+}
+
+/* CONTENT CARDS */
+
+.care-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 23px;
+}
+
+.care-card {
+  background: white;
+  border: 1px solid #e8ede8;
+  border-radius: 16px;
+  padding: 23px;
+  box-shadow: 0 4px 15px rgba(38, 70, 57, 0.025);
+}
+
+.care-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+  color: #397c70;
+}
+
+.care-card-heading h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #253b38;
+  margin: 0;
+}
+
+.care-card-heading p {
+  font-size: 14px;
+  color: #87948c;
+  margin: 3px 0 0;
+}
+
+.patient-profile-preview {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 17px;
+  background: #f6f8f5;
+  border-radius: 12px;
+}
+
+.patient-profile-avatar {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e6f1ed;
+  color: #397c70;
+}
+
+.patient-profile-preview h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.patient-profile-preview p {
+  font-size: 13px;
+  color: #87948c;
+  margin: 4px 0 0;
+}
+
+.care-link-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 17px;
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  color: #397c70;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.overview-reminder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 0;
+  border-bottom: 1px solid #edf0ec;
+}
+
+.overview-reminder strong {
+  font-size: 15px;
+}
+
+.overview-reminder p {
+  color: #87948c;
+  font-size: 13px;
+  margin: 3px 0 0;
+}
+
+.overview-reminder > span {
+  color: #397c70;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.care-activity-card {
+  margin-bottom: 20px;
+}
+
+.activity-record {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 0;
+  border-top: 1px solid #edf0ec;
+}
+
+.activity-record strong {
+  font-size: 15px;
+}
+
+.activity-record p {
+  font-size: 13px;
+  color: #89958e;
+  margin: 4px 0 0;
+}
+
+.activity-status {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f7f0e4;
+  color: #987344;
+  white-space: nowrap;
+}
+
+.activity-status.completed {
+  background: #e6f1ed;
+  color: #397c70;
+}
+
+/* ACTIONS AND SEARCH */
+
+.care-primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: #397c70;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 48px;
+}
+
+.care-primary-button:hover {
+  background: #285e55;
+}
+
+.care-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  height: 52px;
+  background: white;
+  border: 1px solid #e5ebe5;
+  border-radius: 12px;
+  color: #7d8c84;
+  margin-bottom: 22px;
+  max-width: 500px;
+}
+
+.care-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 15px;
+}
+
+/* MEMORY MANAGEMENT */
+
+.memory-management-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.memory-management-card {
+  padding: 23px;
+  background: white;
+  border: 1px solid #e8ede8;
+  border-radius: 15px;
+}
+
+.memory-category {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e8f2ed;
+  color: #397c70;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.memory-management-card h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 17px 0 7px;
+}
+
+.memory-management-card > p {
+  font-size: 14px;
+  color: #829087;
+  line-height: 1.6;
+  min-height: 45px;
+}
+
+.management-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.management-actions button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 11px;
+  border: 1px solid #e7ece7;
+  background: white;
+  border-radius: 8px;
+  color: #65766d;
+  font-size: 13px;
+}
+
+.management-actions button:hover {
+  background: #f3f7f3;
+  color: #397c70;
+}
+
+.memory-management-card .management-actions button:last-child:hover {
+  color: #b45b5b;
+}
+
+/* REMINDER MANAGEMENT */
+
+.managed-reminder {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #edf0ec;
+}
+
+.managed-reminder:last-child {
+  border-bottom: none;
+}
+
+.reminder-time-block {
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: #e8f2ed;
+  color: #397c70;
+  border-radius: 12px;
+  padding: 13px 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.managed-reminder-info {
+  flex: 1;
+}
+
+.managed-reminder-info h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.managed-reminder-info p {
+  font-size: 14px;
+  color: #87948c;
+  margin: 4px 0 0;
+}
+
+/* PLACEHOLDERS */
+
+.profile-placeholder {
+  text-align: center;
+  padding: 60px 25px;
+  color: #397c70;
+}
+
+.profile-placeholder h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 23px;
+  color: #253b38;
+  margin: 15px 0 8px;
+}
+
+.profile-placeholder p {
+  font-size: 15px;
+  color: #87948c;
+  max-width: 480px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.profile-placeholder .profile-note {
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+/* MODAL */
+
+.care-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 47, 40, 0.42);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.care-modal {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.13);
+}
+
+.care-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.care-modal-header h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.care-modal-header button {
+  border: none;
+  background: #f3f6f2;
+  padding: 8px;
+  border-radius: 8px;
+  color: #63766d;
+  display: flex;
+}
+
+.care-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.care-modal label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #50665b;
+}
+
+.care-modal input,
+.care-modal textarea,
+.care-modal select {
+  width: 100%;
+  border: 1px solid #dfe7e0;
+  border-radius: 9px;
+  padding: 12px;
+  outline: none;
+  color: #34483f;
+  font-size: 15px;
+  background: white;
+}
+
+.care-modal input:focus,
+.care-modal textarea:focus,
+.care-modal select:focus {
+  border-color: #397c70;
+}
+
+.modal-submit {
+  margin-top: 8px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .care-sidebar {
+    width: 220px;
+    min-width: 220px;
+  }
+
+  .memory-management-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .caregiver-interface {
+    flex-direction: column;
+  }
+
+  .care-sidebar {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+  }
+
+  .care-logo {
+    margin-bottom: 18px;
+  }
+
+  .care-navigation {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .care-navigation button {
+    white-space: nowrap;
+    width: auto;
+  }
+
+  .sidebar-label,
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .care-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .care-content {
+    padding: 25px 16px;
+  }
+
+  .care-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .care-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .memory-management-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .care-welcome {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .care-welcome h1 {
+    font-size: 27px;
+  }
+
+  .care-date {
+    font-size: 13px;
+  }
+
+  .managed-reminder {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .reminder-time-block {
+    width: 85px;
+  }
+
+  .managed-reminder-info {
+    min-width: 130px;
+  }
+
+  .care-topbar {
+    padding: 0 17px;
+  }
+}
+.patient-memory-item {
+  background: white;
+  padding: 13px;
+  border-radius: 10px;
+  margin-top: 12px;
+  text-align: left;
+}
+
+.patient-memory-item strong {
+  color: #4b3d46;
+  font-size: 17px;
+}
+
+.patient-memory-item p {
+  font-size: 15px;
+  color: #8b7e85;
+  margin: 5px 0 0;
+}
+
+/* DementiaCare patient dashboard additions */
+
+.patient-home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.patient-small-note {
+  margin-top: 12px;
+  color: var(--text-secondary, #7d8c86);
+  font-size: 12px;
+}
+
+.patient-link-code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px dashed var(--primary, #397c70);
+  border-radius: 12px;
+  background: var(--primary-light, #e6f1ed);
+}
+
+.patient-link-code strong {
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.patient-link-code button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quiz-progress {
+  height: 8px;
+  margin: 18px 0 24px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #e9eeea;
+}
+
+.quiz-progress > div {
+  height: 100%;
+  border-radius: inherit;
+  background: #397c70;
+  transition: width .2s ease;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.quiz-option {
+  padding: 14px 18px;
+  border: 1px solid #e9eeea;
+  border-radius: 12px;
+  background: #fff;
+  color: #253b38;
+  text-align: left;
+  cursor: pointer;
+}
+
+.quiz-option:hover:not(:disabled) {
+  border-color: #397c70;
+  background: #f3f8f5;
+}
+
+.quiz-option:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.quiz-option.correct {
+  border-color: #397c70;
+  background: #e6f1ed;
+}
+
+.quiz-option.incorrect {
+  border-color: #c66b61;
+  background: #fff0ee;
+}
+
+.quiz-feedback {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.quiz-feedback p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.patient-word-page h1 {
+  margin: 20px 0 10px;
+  font-size: 36px;
+}
+
+.patient-word-page h3 {
+  margin: 18px 0 6px;
+}
+
+.patient-memory-page,
+.patient-quiz-page,
+.patient-word-page {
+  max-width: 850px;
+}
+
+.patient-memory-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #e9eeea;
+}
+
+.patient-memory-item:last-child {
+  border-bottom: 0;
+}
+
+.patient-memory-item p {
+  margin: 5px 0;
+}
+
+/* Caregiver patient-linking form */
+
+.care-link-form {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 18px;
+  text-align: left;
+}
+
+.care-link-form input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #e9eeea;
+  border-radius: 10px;
+  font: inherit;
+  letter-spacing: 3px;
+}
+
+.care-link-form .care-primary-button {
+  justify-self: start;
+}
+
+.care-link-form .care-primary-button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+@media (max-width: 760px) {
+  .patient-home-grid {
+    grid-template-columns: 1fr;
+  }
+}
